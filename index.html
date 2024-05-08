@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>My portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="section" id="section1">
+                <h1>My Portfolio</h1>
+                <svg>
+                    <defs>
+                        <filter id="extrude" x="-100%" y="-100%" width="300%" height="300%">
+                            <feFlood result="PURPLE" flood-color="var(--purple)"></feFlood>
+                            <feConvolveMatrix order="16,16" divisor="1" in="SourceAlpha" result="EXTRUDE" kernelMatrix="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1"></feConvolveMatrix>
+                            <feComposite in="PURPLE" in2="EXTRUDE" result="COMPOSITE" operator="in"></feComposite>
+                            <feOffset dx="8" dy="8" in="COMPOSITE" result="OFFSET"></feOffset>
+                            <feMerge>
+                                <feMergeNode in="OFFSET"></feMergeNode>
+                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                </svg>
+                <h2>Un sito creato per il capolavoro<br> utilizzando tutte le conoscenze<br> di questi 5 anni di scuola</h2>
+                <div class="triangle1"></div>
+            </div>
+            <div class="section" id="section2">
+                <center>
+                    <canvas id="canvas" width="800" height="600"></canvas>
+                </center>
+                <h3>In questo sito potete trovare un gioco creato con <span class="hollow">javascript:</span>
+                <br>una nave americana deve evitare gli attacchi di kamikaze giapponesi durante la seconda guerra mondiale</h3>
+            </div>
+            <div class="section" id="section3">
+                <footer class="social-banner">
+                    <ul>
+                        <li><a href="https://www.instagram.com/salvatore01_novelli"><img src="img/instagram.png" alt="Sinstagram"></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100078029288643"><img src="img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://github.com/MarkamiBox"><img src="img/github.png" alt="github"></a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="java.js"></script>
+</html>
